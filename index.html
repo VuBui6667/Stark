@@ -10,6 +10,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 <body>
     <div class="overlay first"></div>
@@ -30,6 +31,48 @@
             </ul>
         </div>
         <div class="sign-up">SIGN UP</div>
+    </div>
+    <div class="modal animate__animated">
+        <div class="modal-section1">
+            <img src="/image/login.jpg" class="img-login">
+        </div>
+        <div class="modal-section2">
+            <i class="fas fa-times close-btn"></i>
+            <form action="" id ="form-login">
+                <h1 class="form-heading">WELCOME!</h1>
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter Gmail" id="gmail" class="input-gmail" required>
+            <br>
+            <i class="fas fa-key"></i>
+                <input type="password" placeholder="Enter Password" id="psw" class="input-psw" required>
+            <br>
+            <i class="fas fa-key"></i>
+            <input type="password" placeholder="Confirm Password" id="psw" class="input-psw" required>
+                <button type="submit" class="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal2 animate__animated temp">
+        <div class="modal-section1">
+            <img src="/image/login.jpg" class="img-login">
+        </div>
+        <div class="modal-section2">
+            <i class="fas fa-times close-btn2"></i>
+            <form action="" id ="form-login">
+                <h1 class="form-heading">WELCOME!</h1>
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter Gmail" id="gmail" class="input-gmail" required>
+            <br>
+            <i class="fas fa-key"></i>
+                <input type="password" placeholder="Enter Password" id="psw" class="input-psw" required>
+            <br>
+                <button type="submit" class="submit">Login</button>
+            </form>
+            <div class="footer-modal">
+                <div class="forget">Forgot password?</div>
+                <div class="account">Don't have account?</div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="section1">
@@ -159,7 +202,7 @@
     </div>
     <div class="line">
         <img src="/image/heart.png" alt="" class="heart">
-        <div class="end">MADE REMOTELY BY STARK LAB, INC. COPYRIGHT 2021</div>
+        <div class="end">CLONE THE STARK WEBSITE BY VU_BUI</div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="animation.js"></script>

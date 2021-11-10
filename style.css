@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
-    background-color: #f6f6eb;
 }
 
 body {
     font-family: 'Poppins';
     width: 100%;
     overflow-x: hidden;
+    background-color: #f6f6eb;
 }
 
 .overlay {
@@ -407,4 +407,138 @@ li {
     transform: rotate(0deg);
     margin-left: 0px;
     transition: transform 1s;
+}
+
+.modal, .modal2 {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #ddd6f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: none;
+    animation: fadeIn;
+}
+
+.img-login {
+    width: 550px;
+    height: 500px;
+    border-radius: 15px 0 0 15px;
+}
+
+.modal-section2 {
+    width: 550px;
+    height: 500px;
+    background-color: #f6f6eb;
+    padding: 50px;
+    border-radius: 0 15px 15px 0;
+}
+
+.close-btn, .close-btn2 {
+    font-size: 30px;
+    color: #fc85ae !important;
+    position: absolute;
+    top: 120px;
+    right: 220px;
+    padding: 10px;
+    opacity: 0.5;
+    animation: fadeInOut;
+}
+
+.close-btn:hover, .close-btn2:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.form-heading {
+    margin-bottom: 50px;
+    color: #845EC2;
+    font-weight: 700;
+    letter-spacing: 0.1cm;
+    font-size: 40px;
+}
+
+.submit, .input-gmail, .input-psw {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.input-gmail, .input-psw {
+    cursor:auto;
+}
+
+input {
+    all: unset;
+}
+
+.input-gmail, .input-psw {
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  29px 29px 58px #bebebe,
+             -29px -29px 58px #ffffff;
+    width: 300px;
+    margin: 10px;
+    padding: 10px; 
+    color: #845EC2;
+    font-size: 18px;
+}
+
+.submit {
+    margin-top: 50px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  29px 29px 58px #bebebe,
+             -29px -29px 58px #ffffff;
+    width: 200px;
+    color: #845EC2;
+    line-height: 20px;
+    letter-spacing: 0.05cm;
+    font-weight: 700;
+}
+
+.open {
+    display: flex;
+}
+
+.forget {
+    margin-top: 50px;
+    color:#845EC2;
+}
+
+.forget:hover, .account:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.account {
+    color:#845EC2;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.footer-modal {
+    display: flex;
+    justify-content: center;
+}
+
+.fas {
+    color: #845EC2;
 }

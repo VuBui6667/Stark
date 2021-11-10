@@ -44,3 +44,40 @@ btn4.addEventListener('click', () => {
     img.classList.add('animate__animated', 'animate__fadeIn');
     setTimeout(deleteOld, 500);
 })
+
+let modal = document.querySelector('.modal');
+let openModal = document.querySelector('.sign-up');
+let closeModal = document.querySelector('.close-btn');
+
+function showModal() {
+    modal.classList.add('open');
+}
+
+
+function hideModal() {
+    modal.classList.remove('open');
+}
+
+
+openModal.addEventListener('click', showModal);
+closeModal.addEventListener('click', hideModal);
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.classList.remove('open');
+    }
+}
+
+let modal2 = document.querySelector('.modal2');
+let openModal2 = document.querySelector('.log-in');
+let closeModal2 = document.querySelector('.close-btn2');
+
+function showModal2() {
+    modal2.classList.add('open');
+}
+
+function hideModal2() {
+    modal2.classList.remove('open');
+}
+
+openModal2.addEventListener('click', showModal2);
+closeModal2.addEventListener('click', hideModal2);
